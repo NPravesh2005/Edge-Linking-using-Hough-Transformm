@@ -1,4 +1,5 @@
 # Edge-Linking-using-Hough-Transform
+
 ## Aim:
 To write a Python program to detect the lines using Hough Transform.
 
@@ -23,7 +24,11 @@ Using the HoughLinesP(),detect line co-ordinates for every points in the images.
 
 ## Program:
 ### Input image and grayscale image
-```
+```py
+#DEVELOPED BY : PRAVESH N
+#REG NO : 212223230154
+#EXPT NO : 7
+
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
@@ -47,7 +52,7 @@ plt.axis("off")
 plt.show()
 ```
 ### Canny Edge detector output
-```
+```py
 canny = cv2.Canny(gray, 120, 150)
 
 plt.imshow(canny, cmap='gray')
@@ -56,7 +61,7 @@ plt.axis("off")
 plt.show()
 ```
 ### Display the result of Hough transform
-```
+```py
 lines = cv2.HoughLinesP(canny, 1, np.pi/180, threshold=80, minLineLength=50, maxLineGap=250)
 
 for line in lines:
