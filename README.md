@@ -1,5 +1,8 @@
 # Edge-Linking-using-Hough-Transform
 
+### DEVELOPED BY : PRAVESH N
+### REG NO : 212223230154
+
 ## Aim:
 To write a Python program to detect the lines using Hough Transform.
 
